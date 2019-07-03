@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent= new Intent(getBaseContext(),RecieverActivity.class);
-                myIntent.putExtra("value1",9);
-                myIntent.putExtra("value2",10);
+                myIntent.putExtra("name", etName.getText().toString());
+                myIntent.putExtra("age", Integer.parseInt(etAge.getText().toString()));
                 startActivity(myIntent);
 
 

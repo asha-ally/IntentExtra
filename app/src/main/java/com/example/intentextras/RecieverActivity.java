@@ -23,10 +23,10 @@ public class RecieverActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         tvName=findViewById(R.id.tvName);
         tvAge=findViewById(R.id.tvAge);
-        String savedExtra = getIntent().getStringExtra("value1");
+        String savedExtra = getIntent().getStringExtra("name");
         tvName.setText(savedExtra);
-        int savedExtraNumber = getIntent().getIntExtra("value2",89);
-        tvAge.setText(savedExtraNumber);
+        int savedExtra1=getIntent().getIntExtra("age",0);
+        tvAge.setText(savedExtra1);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
